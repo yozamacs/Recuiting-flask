@@ -1,0 +1,35 @@
+<!doctype html>
+<HTML>
+	<head>
+<title>College Postings</title>
+<!-- <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'> -->
+
+</head>
+<body>
+<div class=page>
+  <h1>Post on Colleges</h1>
+  <div class=metanav>
+    <h4>
+     Please hit the submit button to submit college postings
+    </h4>
+  </div>
+</div>
+	   <form id='button' method='post' action='home' >
+	<script>
+		var count;
+		var schoolLists = {{ schoolList|tojson }};
+ 		// document.write('Length of schoolLists is ' + schoolLists.length + "<br>");
+ 
+		for(count = 0; count < schoolLists.length; count++)
+		{
+			var checkbox = "<input type='checkbox' name="+schoolLists[count]+"'>"
+			document.write(checkbox + schoolLists[count] + "<br/>")
+ 
+		}
+	</script>
+</br>
+    <input type='submit' value='Submit' />
+    </form>
+
+</body>
+</HTML>

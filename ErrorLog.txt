@@ -1,0 +1,4 @@
+Tue Oct 14 11:54:52 PDT 2014, Georgia Southern University, Could not find URL: https://georgiasouthern-csm.symplicity.com/employers/index.php/pid058239?
+Tue Oct 14 12:13:33 PDT 2014, Georgia Southern University, Could not find URL: https://georgiasouthern-csm.symplicity.com/employers/index.php/pid998189?mode=form&id=&s=jobs&ss=jobs
+Wed Oct 15 14:34:59 PDT 2014, Mercer University, Could not find URL: https://mercer-csm.symplicity.com/employers/index.php?mode=form&id=&s=jobs&ss=jobs
+Wed Oct 15 15:37:09 PDT 2014, Loyola University , Could not find URL: https://luc-csm.symplicity.com/employers/index.php?s=jobs&ss=jobs&mode=form&id=&_ksl=1
