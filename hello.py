@@ -1,5 +1,5 @@
 from __future__ import print_function
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import os,subprocess
 app_lulu = Flask(__name__)
 app_lulu.checkboxValues = []
