@@ -4,6 +4,10 @@ import os,subprocess
 app_lulu = Flask(__name__)
 app_lulu.checkboxValues = []
 
+@app_lulu.route('/',methods['GET'])
+def test():
+	return redirect('/home')
+
 @app_lulu.route('/home', methods=['GET','POST'])
 def home():
 	schoolList = []
