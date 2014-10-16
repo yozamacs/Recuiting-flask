@@ -11,25 +11,26 @@
   <div class=metanav>
     <h4>
      Please hit the submit button to submit college postings
+     <!-- {{schoolList}} -->
     </h4>
   </div>
 </div>
-	   <form id='button' method='post' action='home' >
+<form id='button' method='post' action='home' >
 	<script>
 		var count;
 		var schoolLists = {{ schoolList|tojson }};
- 		document.write('Length of schoolLists is ' + schoolLists.length + "<br>");
+ 		document.write('Length of schoolLists is ' + schoolLists.length + "<br />");
  
 		for(count = 0; count < schoolLists.length; count++)
-		{
-			var checkbox = "<input type='checkbox' name="+schoolLists[count]+"'>"
-			document.write(checkbox + schoolLists[count] + "<br/>")
+			{
+				var checkbox = "<input type='checkbox' name="+schoolLists[count]+"'>"
+				document.write(checkbox + schoolLists[count] + "<br/>")
  
-		}
+			}
 	</script>
-</br>
+	</br>
     <input type='submit' value='Submit' />
-    </form>
+</form>
 
 </body>
 </HTML>
