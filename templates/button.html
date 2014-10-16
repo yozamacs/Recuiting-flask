@@ -19,7 +19,7 @@
 <form id='schoolForm' method='post' action='home' >
 	<script>
 		var count;
-		var schoolLists = {{ schoolList|tojson }};
+		var schoolLists = {{ schoolList|tojson|safe }};
  		document.write('Length of schoolLists is ' + schoolLists.length + "<br />");
  
 		for(count = 0; count < schoolLists.length; count++)
