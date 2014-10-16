@@ -15,7 +15,8 @@
     </h4>
   </div>
 </div>
-<form id='button' method='post' action='home' >
+<div>
+<form id='schoolForm' method='post' action='home' >
 	<script>
 		var count;
 		var schoolLists = {{ schoolList|tojson }};
@@ -31,6 +32,6 @@
 	</br>
     <input type='submit' value='Submit' />
 </form>
-
+</div>
 </body>
 </HTML>

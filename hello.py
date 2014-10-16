@@ -26,7 +26,8 @@ def home():
 				if(subprocess.call(['java', '-jar', 'tw-recruiting.jar', 'CSVs/'+schoolName])!=0):
 					outcome = 'failure'
 					#output = subprocess.check_output(['ls', '-1']) wanted to get error log....do that in the future
-				outcome = 'success'
+				else:
+					outcome = 'success'
 		return render_template('submit.html', outcome=outcome)
 
 
