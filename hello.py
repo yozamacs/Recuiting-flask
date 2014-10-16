@@ -15,7 +15,7 @@ def home():
     # note that the function name and the route argument
     # do not need to be the same.
 	if request.method == "GET":
-	    	for f in os.listdir("/Users/maryumstyles/example/CSVs"):
+	    	for f in os.listdir("CSVs"):
 			if f.endswith(".csv"):
 				schoolList.append(f)
 	   	return render_template('button.html',schoolList =schoolList)
@@ -27,7 +27,7 @@ def home():
 		else:
    			for key in app_lulu.checkboxValues:
    				schoolName = key.strip('\'')
-				if(subprocess.call(['java', '-jar', 'tw-recruiting.jar', '/Users/maryumstyles/example/CSVs/'+schoolName])!=0):
+				if(subprocess.call(['java', '-jar', 'tw-recruiting.jar', 'CSVs/'+schoolName])!=0):
 					outcome = 'failure'
 					#output = subprocess.check_output(['ls', '-1']) wanted to get error log....do that in the future
 					return render_template('submit.html', outcome=outcome)
